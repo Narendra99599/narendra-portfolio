@@ -10,7 +10,6 @@ const sendData = async (obj) => {
       body: JSON.stringify(obj),
     });
     let data = await response.json();
-    console.log("this is in sendData",data);
     return data;
   } catch (error) {
     return error.message;
@@ -26,7 +25,6 @@ form.addEventListener("submit", async (event) => {
   let obj = { name, email, subject, message };
   let res = await sendData(obj);
   alert(res.message);
-  console.log(res);
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("subject").value = "";
