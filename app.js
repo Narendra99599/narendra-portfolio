@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 
 const sendData = async (obj) => {
   try {
-    let response = await fetch("http://localhost:3000/api/v1/postData", {
+    let response = await fetch("https://portfoliobackend-r7db.onrender.com/api/v1/postData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,6 +25,7 @@ form.addEventListener("submit", async (event) => {
   const message = document.getElementById("message").value;
   let obj = { name, email, subject, message };
   let res = await sendData(obj);
+  alert(res.message);
   console.log(res);
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
