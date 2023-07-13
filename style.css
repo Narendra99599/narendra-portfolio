@@ -595,6 +595,11 @@ footer{
 
     .nav-bar{
         align-items: flex-start;
+        gap: 1em;
+    }
+
+    .hero-section{
+        margin-top: 1em;
     }
 
     .nav-items{
