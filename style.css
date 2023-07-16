@@ -149,7 +149,7 @@ a{
 }
 
 .hero-section-right{
-    width: 40%;
+    width: 45%;
     position: relative;
 }
 
@@ -158,8 +158,8 @@ a{
 }
 
 .user-image img{
-    width: 95%;
-    padding: 1.4em;
+    width: 100%;
+    padding: 1em;
     background-color: white;
     animation: user-image 5s linear infinite;
 }
@@ -650,9 +650,10 @@ footer{
     }
 
     .hero-section-right{
-        width: 70%;
+        width: 90%;
         margin: 3em auto 0;
     }
+
 
     .project-skill{
         width: 20px;
